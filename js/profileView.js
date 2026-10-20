@@ -16,7 +16,7 @@ export function renderProfile(userData, userRepos, container) {
             </div>
         </div>
     </a>
-    `).join('') : `<p>Nenhum repositório encontrado.</p>`;
+    `).join('') : `<p>Nenhum repositório encontrado.</p>`; //o join é para resetar a união, tirando a virgula;
 
   container.innerHTML = `
     <div class="profile-card">
