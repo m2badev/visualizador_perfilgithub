@@ -1,3 +1,7 @@
+// Este é o modulo para renderizar o perfil na tela
+// This is the module for rendering the profile on the screen.
+// Questo è il modulo per la visualizzazione del profilo sullo schermo.
+
 export function renderProfile(userData, userRepos, container) {
 
   const repositoriesHTML = userRepos && userRepos.length > 0 ? userRepos.map(repo => `

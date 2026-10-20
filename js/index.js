@@ -1,3 +1,7 @@
+// Esse arquivo principal só faz a integração e manipula eventos e as chamadas dos outros arquivos js
+// This main file only handles the integration and manages events and calls to the other JS files.
+// Questo file principale gestisce esclusivamente l'integrazione e si occupa degli eventi e delle chiamate agli altri file JavaScript.
+
 import { fetchGithubUser, fetchGithubUserRepos } from './githubApi.js';
 import { renderProfile } from './profileView.js';
 

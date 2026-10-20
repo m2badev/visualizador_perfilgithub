@@ -1,3 +1,7 @@
+// Esse modulo implementa a busca dos dados do usuário do GitHub
+// This module implements the retrieval of user data from GitHub
+// Questo modulo implementa il recupero dei dati utente da GitHub
+
 const BASE_URL = 'https://api.github.com';
 
 export async function fetchGithubUser(userName) {
