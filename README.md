@@ -1,11 +1,31 @@
+# Visualizador de Perfil do GitHub
 
-Projeto Visualizador de Perfil do GitHub
+Aplicação web que consulta a API pública do GitHub e exibe informações de um perfil e seus repositórios. O projeto também serve como exercício de JavaScript moderno, com módulos ES, `async/await` e tratamento de erros.
 
-Contexto e objetivos de estudo: teste técnico real focado em JavaScript, usando IA para planejar desenvolvimento de funcionalidades que consomem APIs, com HTML e CSS, com foco total na lógica JavaScript moderna com módulos ES6, async/await e tratamento de erros.
+## Funcionalidades
 
-End points usados:
+- Busca de usuários pelo nome de usuário do GitHub.
+- Exibição do avatar, nome, biografia e contagens de seguidores e perfis seguidos.
+- Listagem de até 10 repositórios, com estrelas, forks, observadores e linguagem.
+- Estados de carregamento e tratamento de falhas na consulta.
 
-Perfil: GET /users/:username
+## Tecnologias
 
-Repositórios: GET /users/:username/repos (usar query per_page=10 e sort=updated ou sort=pushed conforme objetivo)
-.
+HTML, CSS e JavaScript com módulos ES nativos. Não há dependências ou etapa de build configuradas.
+
+## Como executar
+
+Sirva os arquivos por um servidor HTTP local e abra a página no navegador. Por exemplo, use a extensão Live Server no Visual Studio Code.
+
+## API utilizada
+
+- Perfil: `GET https://api.github.com/users/{username}`
+- Repositórios: `GET https://api.github.com/users/{username}/repos?per_page=10&sort=created`
+
+## Estrutura
+
+- `index.html`: estrutura da página e ponto de entrada da aplicação.
+- `js/index.js`: eventos de busca e integração dos módulos.
+- `js/githubApi.js`: chamadas à API do GitHub.
+- `js/profileView.js`: renderização dos dados do perfil e dos repositórios.
+- `css/`: estilos base, layout, responsividade e animações.
